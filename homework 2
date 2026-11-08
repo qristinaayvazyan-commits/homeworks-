@@ -1,0 +1,119 @@
+public class StatementsUtil {
+
+    public static boolean isEven(int x) {
+        return x % 2 == 0;
+    }
+
+    public static String checkSign(int x) {
+        if (x > 0) {
+            return "Positive";
+        } else if (x < 0) {
+            return "Negative";
+        }
+        return "Zero";
+    }
+
+    public static boolean checkRange(int x) {
+        return (x > 5 && x < 8) || (x > 15 && x < 20);
+    }
+
+    public static boolean isDivisibleBy5And7(int x) {
+        return x % 5 == 0 && x % 7 == 0;
+    }
+
+    public static boolean isSecondDigit7(int x) {
+        return Math.abs(x) / 10 % 10 == 7;
+    }
+
+    public static boolean isFirstQuadrant(double x, double y) {
+        return x > 0 && y > 0;
+    }
+
+    public static int sumOfDigits(int x) {
+        x = Math.abs(x);
+
+        int sum = 0;
+
+        while (x > 0) {
+            sum += x % 10;
+            x /= 10;
+        }
+
+        return sum;
+    }
+
+    public static boolean isLeapYear(int year) {
+        return (year % 400 == 0) ||
+               (year % 4 == 0 && year % 100 != 0);
+    }
+
+    public static void printNumbers() {
+        for (int i = 1; i <= 200; i++) {
+            System.out.println(i);
+        }
+    }
+
+    public static void printSumWhile() {
+        int x = 1;
+        int y = 0;
+
+        while (x < 5 && y < 10) {
+            System.out.println(x + y);
+            x++;
+            y++;
+        }
+    }
+
+    public static void printSquare(int n) {
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= n; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+
+    public static void printDivisibleBy5(int n) {
+        for (int i = 1; i <= n; i++) {
+            if (i % 5 == 0) {
+                System.out.println(i);
+            }
+        }
+    }
+
+    public static int sumEvenNumbers(int n) {
+        int sum = 0;
+
+        for (int i = 1; i <= n; i++) {
+            if (i % 2 == 0) {
+                sum += i;
+            }
+        }
+
+        return sum;
+    }
+
+    public static void findMinAndMax(int n) {
+        if (n < 1) {
+            System.out.println("Invalid N");
+            return;
+        }
+
+        int min = 1;
+        int max = 1;
+
+        for (int i = 1; i <= n; i++) {
+            if (i < min) {
+                min = i;
+            }
+
+            if (i > max) {
+                max = i;
+            }
+        }
+
+        System.out.println("Min = " + min);
+        System.out.println("Max = " + max);
+        System.out.println("Average = " + (min + max) / 2);
+    }
+}
