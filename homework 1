@@ -1,111 +1,73 @@
+
 public class Variables {
 
     public static void main(String[] args) {
 
-        // Group (Integer)
-
-        // 1
         byte b = 100;
         System.out.println(b);
 
-        // 2
         short s = 30000;
         System.out.println(s);
 
-        // 3
         int i = 100000;
         System.out.println(i);
 
-        // 4
         long l = 10000000000L;
         System.out.println(l);
 
-        // 5
         System.out.println(Byte.MIN_VALUE + " " + Byte.MAX_VALUE);
         System.out.println(Short.MIN_VALUE + " " + Short.MAX_VALUE);
         System.out.println(Integer.MIN_VALUE + " " + Integer.MAX_VALUE);
         System.out.println(Long.MIN_VALUE + " " + Long.MAX_VALUE);
 
-        // 6
         byte num = 127;
         System.out.println(num);
 
-
-        // Group (Floating point number)
-
-        // 7
         float f = 12.5f;
         System.out.println(f);
 
-        // 8
         double d = 25.75;
         System.out.println(d);
 
-        // 9
         System.out.println(Float.MIN_VALUE + " " + Float.MAX_VALUE);
         System.out.println(Double.MIN_VALUE + " " + Double.MAX_VALUE);
 
-
-        // Group (Character)
-
-        // 10
         char ch = 'A';
         System.out.println(ch);
 
-        // 11
         char c = 77;
         System.out.println(c);
 
-        // 11.1
         char x = 77;
         char y = 109;
         System.out.println(x);
         System.out.println(y);
 
-        // 11.2
         char symbol = 'K';
         System.out.println((int) symbol);
 
-
-        // Group (Boolean)
-
-        // 12
         boolean isJavaFun = true;
         System.out.println(isJavaFun);
 
-        // 13
         int year = 2024;
         System.out.println(year);
 
-
-        // Java Type Casting
-
-        // Widening Casting
-
-        // 14
         int number = 55;
         double result = number;
         System.out.println(result);
 
-        // 15
         byte a = 7;
         int converted = a;
         System.out.println(converted);
 
-
-        // Narrowing Casting
-
-        // 16
         double value = 9.78;
         int convertedValue = (int) value;
         System.out.println(convertedValue);
 
-        // 17
         int bigNumber = 9999;
         byte smallNumber = (byte) bigNumber;
         System.out.println(smallNumber);
 
-        // 18
         long max = 123456789L;
         double decimal = 1000.00;
         char first = 'A';
